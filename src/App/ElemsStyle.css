@@ -1,0 +1,20 @@
+.info {
+  border: 1px solid black;
+
+  width: 160px;
+  height: 160px;
+}
+
+@media screen and (max-width: 900px){
+  .info {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .info {
+    width: 900px;
+  }
+
+
+}

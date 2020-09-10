@@ -1,0 +1,151 @@
+header{
+    width: 100%;
+    height: 0em;
+    color: #fff;
+    background-color: #1976d2!important;
+    position: relative;
+    z-index: 100000;
+}
+
+.menu.transition{
+    position: relative;
+    z-index: 1000;
+
+}
+.ui.dropdown{
+    width: 3em;
+
+}
+.ui.dropdown .text{
+   margin-left: 0;
+  //  width: 3em;
+}
+.menu.transition .item{
+    width: 3em;
+    padding: 0;
+    margin: 0;
+
+}
+.menu.transition .text{
+    margin-left: -0em;
+}
+
+
+header .item{
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    padding-left: 0px!important;
+}
+header h1{
+    font-size: 1.8em;
+    display: inline-block;
+}
+
+header div.city{
+    position:absolute;
+    top: 4.5em;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+    z-index: 1100;
+
+}
+
+
+header div.filters{
+
+    position:absolute;
+    top: 10.5em;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+    z-index: 1000;
+
+}
+
+
+.ui.rating{
+    float: right;
+    margin-top: 0.5em;
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+header .ui.inverted.top.fixed.menu{
+    color: #fff;
+    background-color: #1976d2!important;
+
+}
+
+header .ui.inverted.vertical.labeled.icon.ui.overlay.left.visible.sidebar.menu{
+    color: #fff;
+    background-color: #1976d2!important;
+}
+
+header .ui.sidebar{
+    top: 4em;
+    height: 36em;
+    max-height: 36em;
+    overflow-y: hidden!important;
+
+}
+
+header .ui.fluid.dropdown{
+    display: inline-block;
+    width: 30%;
+    min-width: 10em;
+    max-width: 20em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+header .accordion .title {
+    display: inline-block;
+}
+
+
+.breadcrumbs {
+    margin: 0; /* Убираем отступы */
+    padding: 10px; /* Поля вокруг текста */
+    background: #b2d235; /* Цвет фона */
+}
+.breadcrumbs li {
+    display: inline-block; /* Размещаем список по горизонтали */
+}
+.breadcrumbs a {
+    color: #fff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+}
+.breadcrumbs li + li::before {
+    content: '/'; /* Разделитель ссылок */
+    padding: 0 7px; /* Расстояние вокруг разделителя */
+}
+
+@media all and (max-width: 800px) {
+  p{
+
+  }
+}
+
+.visible.sidebar.menu {
+    z-index: 10000;
+    margin-top:4.3em!important;
+}
+
+.rating  .title{
+    float:right!important;
+    margin-right: 0.5em;
+    margin-top: 0.3em;
+}
+
+.rating  .content{
+    clear: both!important;
+}

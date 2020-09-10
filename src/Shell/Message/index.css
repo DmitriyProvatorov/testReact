@@ -1,0 +1,31 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+   right: 0px;
+    height: 2em;
+    padding: 0.5em;
+}
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2em;
+}
+
+.flex-container > div{
+  display: inline-block;
+    max-width: 10em;
+    width:10em;
+}
+a{
+    text-decoration:  none;
+}
+.active{
+    font-weight: bold;
+    text-decoration:  underline;
+
+}
