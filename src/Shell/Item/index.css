@@ -1,0 +1,67 @@
+.item_field{
+    width: 450px;
+    margin-left: 25px;
+    border: 4px double black;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.item_field input{
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+
+}
+.item_field label{
+
+    height: 18px;
+
+}
+.item_checkbox{
+    width : 20px;
+    height: 20px;
+    -webkit-appearance: none;
+
+    border: 4px double black;
+}
+.item_field .button_item{
+    border: 4px double black;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 2em;
+
+}
+
+.item_modal_window{
+    border: 4px double black;
+    width: 10em;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    height: 5em;
+    background-color: white;
+    z-index: 2;
+
+}
+
+.button_modal{
+    display: block;
+    outline: none;
+    border: none;
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    height: 2em;
+}
+.button_modal:hover{
+    cursor:pointer;
+    background-color: azure;
+}

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import  Registration from "../../Pages/Registration";
+import  Login from "../../Pages/Login";
 import {changePage, enterUser, removeLoader, setLoader} from '../../Redux/actions';
 
 
@@ -23,7 +23,7 @@ function mapDispatchToProps(dispatch) {
 
     };
 }
-const Index = connect(mapStateToProps, mapDispatchToProps)(Registration);
+const Index = connect(mapStateToProps, mapDispatchToProps)(Login);
 
 
 export default Index;

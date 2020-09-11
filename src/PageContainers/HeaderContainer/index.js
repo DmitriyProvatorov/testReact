@@ -2,8 +2,8 @@
 import { connect } from 'react-redux';
 
 
-import HeaderSite from '../../components/shell/HeaderSite';
-import {enterUser, exitUser, removeLoader, setLoader, changePage, changeAdvertisingInformation} from '../../actions';
+import HeaderSite from '../../Shell/HeaderSite';
+import {enterUser, exitUser, removeLoader, setLoader, changePage, changeAdvertisingInformation} from '../../Redux/actions';
 
 function mapStateToProps(state){
 

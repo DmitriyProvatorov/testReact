@@ -1,11 +1,19 @@
-import React from 'react';
-import logo from '../logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-      <div className="info"></div>
-  );
+import './ElemsStyle.css';
+import './Medias.css';
+import Main from '../Main'
+import HeaderContainerSite  from "../PageContainers/HeaderContainer"
+
+class App extends Component {
+  render() {
+    return (
+        <div className="container">
+          <Main />
+          <HeaderContainerSite/>
+        </div>
+    );
+  }
 }
 
-export default App;
+  export default App;

@@ -5,7 +5,7 @@ import promise from 'redux-promise';
 import thunk from 'redux-thunk';
 
 import state from '../state';
-import reducer from '../../reducers';
+import reducer from '../reducers';
 
 
 const composeEnhancers = composeWithDevTools({

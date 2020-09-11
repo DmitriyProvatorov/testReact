@@ -1,0 +1,28 @@
+input[type="checkbox"]{
+    width : 20px;
+    height: 20px;
+    -webkit-appearance: none;
+}
+ .field.checkbox{
+    text-align: left;
+     width: 8.6em;
+}
+.field.button > div{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0.7em;
+}
+.field > div >input{
+    text-align: center;
+    width: 7em;
+    height: 2.3em;
+}
+
+input[type="checkbox"]:checked {
+    background-color: blue;
+    border: none;
+    outline: none;
+    -webkit-appearance: checkbox;
+
+}

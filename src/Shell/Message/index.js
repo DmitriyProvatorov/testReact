@@ -39,34 +39,14 @@ export default class Index extends Component{
 
     render() {
 
-        if (this.state.redirect) {
 
 
             return (
-                <>
-                <Redirect to='/'/>
+                <div className="error_message">Error message </div>
+                    );
 
-
-
-                </>)
-        } else {
-
-
-            return (
-
-
-                <header>
-                    <nav className="flex-container">
-                        <div><Link to="/login">Login</Link></div>
-                        <div><Link to="/registration">Registration</Link></div>
-                        <div className='active'><Link to="/items">Items</Link></div>
-                    </nav>
-
-
-                </header>
-            );
         }
-    }
+
 
 
 }
