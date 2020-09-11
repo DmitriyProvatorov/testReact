@@ -1,5 +1,5 @@
 .items_container{
-    width: 500px;
+    width: 600px;
     border: 4px double black;
     position: absolute;
     top: 100px;
@@ -24,39 +24,18 @@
 }
 
 
-.items_container >.field{
+.items_container .field_buttons{
     margin-top: 1em;
     margin-bottom: 1em;
     padding-left: 1.5em;
 }
-.field .items_button {
-    float: left;
+.field_buttons .items_button {
+
     height: 2em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     width: 12em;
     background-color: white;
-}
-
-.add_item_modal_window{
-    width: 450px;
     border: 4px double black;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.add_item_modal_window >h2{
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 0.5em;
 }
 
-.add_item_modal_window > .field{
-    width: 310px;
-
-}
-.add_item_modal_window > .field > input{
-    float: right;
-    width: 10.5em;
-}

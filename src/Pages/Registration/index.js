@@ -11,7 +11,7 @@ export default class Index extends Component{
         return(
             <div className="containerPage">
                 <div className="auth_windows">
-                    <h2>Registration</h2>
+                    <h2 className="registration">Registration</h2>
                     <div className="field">
                         <input id="id1"/><label >Email</label>
                     </div>
@@ -24,7 +24,7 @@ export default class Index extends Component{
                     <div className="field">
                         <Message/>
                     </div>
-                    <div className="field button">
+                    <div className="field_button">
                         <div>
                             <input className=""
                                    type="button"

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './index.css'
 import Message from "../../Shell/Message";
-import Item from "../../Shell/Item"
+import Item from "../../Shell/Item";
+import AddUpdateItem from "../../Shell/AddUpdateItem";
 
 export default class Index extends Component{
     constructor(props) {
@@ -18,7 +19,7 @@ export default class Index extends Component{
                 </div>
                  //Итератор сюда
                 <Item/>
-                <div className="field">
+                <div className="field_buttons">
                     <input className="items_button"
                            type="button"
                            value="Add New Item"/>
@@ -28,23 +29,7 @@ export default class Index extends Component{
                 </div>
             </div>
 
-                <div className="add_item_modal_window">
-                    <h2>Add/Update Item</h2>
-                    <div className="field">
-                        <input id="id1"/><label >Name</label>
-                    </div>
-                    <div className="field">
-                        <Message/>
-                    </div>
-
-                    <div className="field">
-
-                            <input className=""
-                                   type="button"
-                                   value="Add/Update"/>
-
-                    </div>
-                </div>
+            <AddUpdateItem />
 
             </div>
 

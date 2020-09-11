@@ -5,18 +5,20 @@ input[type="checkbox"]{
 }
  .field.checkbox{
     text-align: left;
-     width: 8.6em;
+
 }
-.field.button > div{
+.field_button > div{
     width: 100%;
     display: inline-block;
     text-align: center;
     margin-top: 0.7em;
 }
-.field > div >input{
+.field_button > div >input{
     text-align: center;
     width: 7em;
-    height: 2.3em;
+    height: 2.4em;
+    border: 4px double black;
+    margin-left: -30px;
 }
 
 input[type="checkbox"]:checked {
