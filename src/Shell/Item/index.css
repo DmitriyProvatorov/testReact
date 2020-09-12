@@ -44,7 +44,7 @@
     border: 4px double black;
     width: 10em;
     position: absolute;
-    top:0px;
+    top:1.8em;
     right: 0px;
     height: 5em;
     background-color: white;
@@ -64,4 +64,7 @@
 .button_modal:hover{
     cursor:pointer;
     background-color: azure;
+}
+.item_name{
+    margin-left: 1em;
 }

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import  Registration from "../../Pages/Registration";
-import {changePage, enterUser, removeLoader, setLoader} from '../../Redux/actions';
+import {registrationUser} from '../../Redux/actions';
 
 
 function mapStateToProps(state){
@@ -15,11 +15,8 @@ function mapStateToProps(state){
 function mapDispatchToProps(dispatch) {
     return {
 
+        registrationUser:(data) => dispatch(registrationUser(data)),
 
-        changePage: location => dispatch(changePage(location)),
-        enterUser:(data) => dispatch(enterUser(data)),
-        setLoader: () => dispatch(setLoader()),
-        removeLoader: () => dispatch(removeLoader())
 
     };
 }

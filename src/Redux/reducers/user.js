@@ -1,68 +1,35 @@
-import {
-    GET_AUTH,
-    EXIT,
-    CHANGE_USER_DATA
-
-} from '../actions';
+import {LOGIN_USER} from '../actions';
 
 
-
-
-
-function reducer(state = {}, action){
-
-
-
-
+function reducer(state = false, action){
 
     switch (action.type) {
 
 
-        case GET_AUTH:
+        case LOGIN_USER:
+
+            if(action.data.isRemember) {
+                state = action.data.isRemember;
+            }
+            else {
+
+                let password= localStorage.getItem(action.data.email);
+                if (password === action.data.password){
+                    state = true;
+                }
 
 
+            }
 
-
-
-            state = action.data;
-
-
-
-
-
-            return state;
-
-            break;
-
-        case EXIT:
-            state = {};
+            console.log(state)
 
             return state;
 
             break;
 
-        case CHANGE_USER_DATA:
-
-            state = action.data;
-
-
-
-
-            return state;
-
-            break;
-
-        default:
-
-
-
+            default:
             return state;
     }
-
-
-
-
-
 };
 
 export default reducer;

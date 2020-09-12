@@ -1,57 +1,18 @@
-export const GET_AUTH = 'GET_AUTH';
-export const EXIT = 'EXIT';
-export const CHANGE_USER_DATA = 'CHANGE_USER_DATA';
 
-
-let appStorage = window.localStorage;
-
-
-let COOCIE_NAME = 'test_cookie';
-
-function setStorage(name, value) {
-
-
-    appStorage.setItem(name, value)
-
-}
-
-function deleteStorage(name) {
-
-    appStorage.removeItem(name);
-}
-
-export function enterUser(data){
-
-
-
-
-    if( data.header) {
-        setStorage(COOCIE_NAME, data.header)
-    }
-
-
-
+export const CREATE_USER = 'CREATE_USER';
+export const LOGIN_USER = 'LOGIN_USER';
+export function registrationUser(data){
+    window.localStorage.setItem(data.email, data.password);
     return {
-        type : GET_AUTH,
-        data : data.data
+        type : 'CREATE_USER',
+        data : data
         };
 }
-
-export function exitUser(){
-
-    deleteStorage(COOCIE_NAME)
+export function loginUser(data){
 
     return {
-        type : EXIT,
-        data :null,
-       
+        type : 'LOGIN_USER',
+        data : data
     };
 }
 
-export function changeUser(data){
-
-    return {
-        type : CHANGE_USER_DATA,
-        data : data.data
-    };
-}

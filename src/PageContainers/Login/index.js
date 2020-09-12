@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import  Login from "../../Pages/Login";
-import {changePage, enterUser, removeLoader, setLoader} from '../../Redux/actions';
+import {loginUser} from '../../Redux/actions';
 
 
 function mapStateToProps(state){
@@ -14,12 +14,8 @@ function mapStateToProps(state){
 
 function mapDispatchToProps(dispatch) {
     return {
+        loginUser:(data) => dispatch(loginUser(data)),
 
-
-        changePage: location => dispatch(changePage(location)),
-        enterUser:(data) => dispatch(enterUser(data)),
-        setLoader: () => dispatch(setLoader()),
-        removeLoader: () => dispatch(removeLoader())
 
     };
 }

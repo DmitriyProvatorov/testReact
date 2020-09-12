@@ -42,7 +42,8 @@ export default class Index extends Component{
 
 
             return (
-                <div className="error_message">Error message </div>
+
+                <div  style={{backgroundColor: this.props.message ? ' darksalmon': 'green'}} className="error_message">{this.props.message ? this.props.message : "valid"}</div>
                     );
 
         }

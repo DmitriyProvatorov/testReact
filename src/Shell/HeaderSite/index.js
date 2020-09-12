@@ -1,41 +1,16 @@
 import React, { Component } from 'react';
 import './index.css';
-import {Link, Redirect} from "react-router-dom";
-export default class Index extends Component{
-
-
+import {NavLink, Redirect} from "react-router-dom";
+export default class Index extends Component {
 
 
     constructor(props) {
         super(props);
-        this.state = {
-
-
-
-
-
-        };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        this.state = {};
+    }
+    componentDidMount() {
 
     }
-
-
-
-
-
 
     render() {
 
@@ -57,9 +32,9 @@ export default class Index extends Component{
 
                 <header>
                     <nav className="flex-container">
-                        <div><Link to="/login">Login</Link></div>
-                        <div><Link to="/registration">Registration</Link></div>
-                        <div className='active'><Link to="/items">Items</Link></div>
+                        <div><NavLink  activeStyle={{ color: 'red' }} to="/login">Login</NavLink></div>
+                        <div><NavLink  activeStyle={{ color: 'red' }} to="/registration">Registration</NavLink></div>
+                        <div className='active'><NavLink  activeStyle={{ color: 'red' }} to="/items">Items</NavLink></div>
                     </nav>
 
 
