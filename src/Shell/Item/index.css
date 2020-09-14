@@ -1,11 +1,13 @@
 .item_field{
-    width: 450px;
+
     margin-left: 25px;
+    margin-right: 25px;
     border: 4px double black;
     height: 2em;
     display: flex;
     align-items: center;
     position: relative;
+    min-width: 450px;
 
 }
 .item_field input{

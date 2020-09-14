@@ -1,11 +1,30 @@
-.add_item_modal_window{
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    top: 2em;
+    left: 0px;
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.add_item_modal_window {
     width: 450px;
     border: 4px double black;
 
-
-    padding-top: 10px;
     padding-bottom: 10px;
 }
+
+
+
+
+
 .add_item_modal_window >h2{
     width: 100%;
     display: inline-block;
@@ -19,6 +38,15 @@
 }
 .add_item_modal_window > .field > input{
     float: right;
-    width: 10.5em;
+    width: 10em;
 
 }
+
+.my-node-enter {
+    opacity: 0;
+}
+.my-node-enter-active {
+    opacity: 1;
+    transition: opacity 2000ms;
+}
+

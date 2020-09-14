@@ -3,13 +3,18 @@ import Message from '../../Shell/Message';
 import './index.css';
 
 export default class Index extends Component{
+
     constructor(props) {
         super(props);
         this.state = {
             showModal : false
         };
+
+
         this.selectItem = this.selectItem.bind(this);
         this.showModal = this.showModal.bind(this);
+        this.remove= this.remove.bind(this);
+        this.update = this.update.bind(this);
 
     }
     componentWillReceiveProps(nextProps, nextState) {
@@ -23,6 +28,17 @@ export default class Index extends Component{
     showModal(){
         let showModal = !this.state.showModal;
         this.setState({showModal});
+    }
+    remove(index){
+        this.setState({showModal:false}, function(){
+        this.props.removeItem(index);
+        });
+    }
+    update(index){
+
+        this.setState({showModal:false});
+
+        this.props.setUpdateIndex(index);
     }
 
     render() {
@@ -39,10 +55,12 @@ export default class Index extends Component{
                    <div className="item_modal_window" style={{display: this.state.showModal ? '' : 'none'}}>
                        <input className="button_modal"
                               type="button"
-                              value="Update"/>
+                              value="Update"
+                        onClick={()=>this.update(this.props.index)}/>
                        <input className="button_modal"
                               type="button"
-                              value="Delete"/>
+                              value="Delete"
+                            onClick={()=>this.remove(this.props.index)}/>
 
                    </div>
                </div>
