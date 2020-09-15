@@ -30,6 +30,7 @@ export default class Index extends Component{
     }
 
     onChangeName(event, data) {
+        //TODO методы валидации общие с клиентом у сервера - вынести их в одну подключаемую возвращающую тру или фолс
         let name = event.target.value;
         const Name_REG = /(^[a-z]+$)/;
         this.setState({
